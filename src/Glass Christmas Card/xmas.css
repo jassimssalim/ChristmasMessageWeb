@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap');
+
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(bg.jpg)no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+}
+.container {
+  height: 450px;
+  width: 600px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+
+
+.card {
+  position: absolute;
+  height: 300px;
+  width: 600px;
+  background: rgba(255, 255, 255, 0.35);
+   border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.3px);
+-webkit-backdrop-filter: blur(3.1px);
+border: 1px solid rgba(255, 255, 255, 0.53);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 20px;
+  top: 340px
+ 
+}
+.card img {
+  position: absolute;
+  width: 300px;
+  filter: drop-shadow(0 0 20px rgba(26, 0, 68, 0.34));
+  bottom: 0;
+  left: 140px;
+  transition: 0.7s;
+}
+.text-container {
+  position: absolute;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: justify;
+  font-size: 14px;
+  width: 250px;
+  right: -250px;
+  transition: 0.5s;
+}
+.card h2 {
+  color: black;
+  text-transform: uppercase;
+}
+.card p {
+  font-weight: 400;
+  text-align: justify;
+  color: black;
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+}
+.card:hover img {
+  width: 250px;
+  left: 15px;
+  bottom: 20px;
+}
+.card:hover .text-container {
+  right: 15px;
+}
+
+
+.snow, .snow2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(https://i.ibb.co/4fN5F8w/snow.png);
+  background-position: 0 0;
+}
+
+
+.snow {
+  background-size: 70em;
+  animation: snowfall 30s linear infinite;
+}
+
+.snow2 {
+  background-size: 50em;
+  animation: snowfall2 30s linear infinite;
+  opacity: 0.5;
+}
+
+
+
+.santa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(santa.png);
+  background-position: 0 0;
+  
+}
+
+.santa {
+  background-size: 70em;
+  animation: santafall 40s linear infinite;
+ 
+}
+
+.hpy{
+position: relative;
+left: 200px;
+
+
+
+  
+}
+
+@keyframes snowfall {
+  100% {
+    background-position: 70em 70em;
+  }
+  
+}
+  
+  @keyframes snowfall2 {
+    100% {
+      background-position: 50em 0em;
+    }
+    
+    }
+  
+
+@keyframes santafall {
+  100% {
+    background-position: 50em 0em;
+  }
+}
